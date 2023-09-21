@@ -19,15 +19,15 @@ export default function Tailwind() {
         />
       </div>
 
-      <div className="px-40 gap-5 flex flex-col">
+      <div className="flex flex-col gap-5 px-40">
         <Card update={update} />
         <div className="w-1/4">
           <Button
             title={update ? "BG-Gray" : " BG-Neutral"}
-            color="green"
+            style={update ? "success" : "primary"}
             size="large"
             onClick={() => setUpdate(!update)}
-            className="active:scale-105 transition ease-in-out duration-100"
+            className="transition duration-300 ease-in-out active:scale-105 active:duration-100"
           />
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function Header({ level, text, className }: HeaderProps) {
       "text-2xl": level === header.h4,
       "text-xl": level === header.h5,
     },
-    className
+    className,
   );
 
   const HeaderTag = level as keyof JSX.IntrinsicElements;

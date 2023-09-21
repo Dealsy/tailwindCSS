@@ -5,10 +5,11 @@ export const sizes = {
   superLarge: "superLarge",
 } as const;
 
-export const colour = {
-  blue: "blue",
-  red: "red",
-  green: "green",
+export const Style = {
+  primary: "primary",
+  danger: "danger",
+  success: "success",
+  availability: "availability",
 } as const;
 
 export const header = {

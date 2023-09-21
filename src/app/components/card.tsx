@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Button from "./button";
 import clsx from "clsx";
 
 type CardProps = {
@@ -10,21 +9,21 @@ export default function Card({ update }: CardProps) {
   return (
     <div
       className={clsx(
-        "flex flex-col gap-3 mt-40  border-2 border-gray-700 rounded-3xl",
+        "mt-40 flex flex-col gap-3 rounded-3xl border-2 border-gray-700",
         update ? "bg-neutral-800" : "bg-gray-900",
-        "transition ease-in-out duration-500"
+        "transition duration-500 ease-in-out",
       )}
     >
       <div className="flex flex-row gap-3">
         <Image
-          className="object-cover  rounded-l-3xl"
+          className="rounded-l-3xl  object-cover"
           src="/images/image-4.jpg"
           alt=""
           width={200}
           height={200}
         />
         <div className="flex flex-col gap-10 p-4 leading-normal">
-          <h5 className="text-2xl font-bold tracking-tight text-white mt-5">
+          <h5 className="mt-5 text-2xl font-bold tracking-tight text-white">
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="mb-3 font-normal text-gray-400">

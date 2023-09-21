@@ -1,12 +1,12 @@
-import { colour, sizes } from "@/constants";
+import { Style, sizes } from "@/constants";
 
 export type Size = (typeof sizes)[keyof typeof sizes];
-export type Colour = (typeof colour)[keyof typeof colour];
+export type StyleType = (typeof Style)[keyof typeof Style];
 
 export type ButtonProps = {
   title: string;
   size?: Size;
-  color?: Colour;
+  style?: StyleType;
   className?: string;
   onClick?: () => void;
   disabled?: boolean;

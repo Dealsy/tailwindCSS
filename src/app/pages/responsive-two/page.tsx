@@ -12,34 +12,34 @@ export default function Responsive2() {
       <Header level="h1" text="Responsive" />
 
       <div className="flex items-center justify-between gap-10">
-        <div className={clsx("py-6 px-4", "sm:p-6", "md:py-10 md:px-8")}>
+        <div className={clsx("px-4 py-6", "sm:p-6", "md:px-8 md:py-10")}>
           <div
             className={clsx(
-              "max-w-4xl mx-auto grid grid-cols-1",
-              "lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2"
+              "mx-auto grid max-w-4xl grid-cols-1",
+              "lg:max-w-5xl lg:grid-cols-2 lg:gap-x-20",
             )}
           >
             <div
               className={clsx(
-                "relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0",
-                "sm:bg-none sm:row-start-2 sm:p-0",
-                "lg:row-start-1"
+                "relative col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 p-3",
+                "sm:row-start-2 sm:bg-none sm:p-0",
+                "lg:row-start-1",
               )}
             >
               <Header
                 level="h3"
                 text="Beach House in Collingwood"
                 className={clsx(
-                  "mt-1 font-semibold text-white text-left ",
+                  "mt-1 text-left font-semibold text-white ",
                   "sm:text-slate-900 ",
-                  "dark:sm:text-white"
+                  "dark:sm:text-white",
                 )}
               />
               <p
                 className={clsx(
-                  "text-sm leading-4 font-medium text-white",
+                  "text-sm font-medium leading-4 text-white",
                   "sm:text-slate-500",
-                  "dark:sm:text-slate-400"
+                  "dark:sm:text-slate-400",
                 )}
               >
                 Entire house
@@ -47,15 +47,15 @@ export default function Responsive2() {
             </div>
             <div
               className={clsx(
-                "grid gap-4 col-start-1 col-end-3 row-start-1",
+                "col-start-1 col-end-3 row-start-1 grid gap-4",
                 "sm:mb-6 sm:grid-cols-4",
-                "lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0"
+                "lg:col-start-2 lg:row-span-6 lg:row-end-6 lg:mb-0 lg:gap-6",
               )}
             >
               <Image
                 src="/images/beach-house.jpg"
                 alt=""
-                className="object-cover w-full rounded-lg h-60 sm:h-52 sm:col-span-2 lg:col-span-full"
+                className="h-60 w-full rounded-lg object-cover sm:col-span-2 sm:h-52 lg:col-span-full"
                 loading="lazy"
                 height={240}
                 width={360}
@@ -63,7 +63,7 @@ export default function Responsive2() {
               <Image
                 src="/images/beach-house-interior-1.jpg"
                 alt=""
-                className={`${commonClasses} sm:block sm:col-span-2 md:col-span-1 lg:row-start-2`}
+                className={`${commonClasses} sm:col-span-2 sm:block md:col-span-1 lg:row-start-2`}
                 loading="lazy"
                 height={208}
                 width={360}
@@ -79,11 +79,11 @@ export default function Responsive2() {
             </div>
             <dl
               className={clsx(
-                "mt-4 text-xs font-medium flex items-center row-start-2",
-                "sm:mt-1 sm:row-start-3",
+                "row-start-2 mt-4 flex items-center text-xs font-medium",
+                "sm:row-start-3 sm:mt-1",
                 "md:mt-2.5",
                 "lg:row-start-2",
-                "text-gray-700 dark:text-white"
+                "text-gray-700 dark:text-white",
               )}
             >
               <dt className="sr-only">Reviews</dt>
@@ -136,22 +136,19 @@ export default function Responsive2() {
             </dl>
             <div
               className={clsx(
-                "mt-4 col-start-1 row-start-3 self-center",
-                "sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2",
-                "lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4"
+                "col-start-1 row-start-3 mt-4 self-center",
+                "sm:col-start-2 sm:row-span-2 sm:row-start-2 sm:mt-0",
+                "lg:col-start-1 lg:row-start-3 lg:row-end-4 lg:mt-6",
               )}
             >
-              <Button
-                title="Check availability"
-                className="px-3 py-2 text-sm font-medium leading-6 text-white bg-indigo-600 rounded-lg"
-              />
+              <Button title="Check availability" style="availability" />
             </div>
             <p
               className={clsx(
-                "mt-4 text-sm leading-6 col-start-1",
+                "col-start-1 mt-4 text-sm leading-6",
                 "sm:col-span-2",
-                "lg:mt-6 lg:row-start-4 lg:col-span-1",
-                "text-gray-800 dark:text-white"
+                "lg:col-span-1 lg:row-start-4 lg:mt-6",
+                "text-gray-800 dark:text-white",
               )}
             >
               This sunny and spacious room is for those traveling light and
